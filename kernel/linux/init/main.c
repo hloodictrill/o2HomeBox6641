@@ -627,7 +627,7 @@ asmlinkage void __init start_kernel(void)
 	 * we've done PCI setups etc, and console_init() must be aware of
 	 * this. But we do want output early, in case something goes wrong.
 	 */
-#if 1 /* ChenHe@MSTC for disable console output when debug flag is 0, 20130524 */
+#if 0 /* ChenHe@MSTC for disable console output when debug flag is 0, 20130524 */
 	console_loglevel = 0;
 #endif
 	console_init();

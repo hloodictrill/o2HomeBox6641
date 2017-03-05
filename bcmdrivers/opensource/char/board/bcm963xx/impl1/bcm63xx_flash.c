@@ -642,7 +642,7 @@ EXPORT_SYMBOL(kerSysNvRamGetVersion);
 
 void kerSysFlashInit( void )
 {
-#if 1 /* ChenHe@MSTC for disable console output when debug flag is 0, 20130524 */
+#if 0 /* ChenHe@MSTC for disable console output when debug flag is 0, 20130524 */
 	if(inMemNvramData.EngDebugFlag != 0)
 		console_loglevel = default_console_loglevel;
 #endif

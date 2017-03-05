@@ -596,7 +596,7 @@ static int __init serial_bcm63xx_init(void)
     } else {
         uart_unregister_driver(&bcm63xx_reg);
     }
-#if 1 /* ChenHe@MSTC for disable console output when debug flag is 0, 20130524 + 20140527 */
+#if 0 /* ChenHe@MSTC for disable console output when debug flag is 0, 20130524 + 20140527 */
 	if (uartDebugFlag == 0){	
 		uart_suspend_port(&bcm63xx_reg, &bcm63xx_ports[0]);
 		uart_remove_one_port(&bcm63xx_reg, &bcm63xx_ports[0]);
